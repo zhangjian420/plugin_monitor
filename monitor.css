@@ -1,7 +1,18 @@
-.monitor {
-	display: table;
+.monitor_container {
+	display: flex;
+	flex-wrap: wrap;
 	margin-left: auto;
 	margin-right: auto;
+	justify-content: space-around;
+}
+
+.monitor_sub_container {
+	display: flex-root;
+	flex: 1;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: space-around;
 }
 
 .monitor_main {
@@ -12,6 +23,16 @@
 	position: relative;
 	padding: 3px;
 	margin: 4px;
+}
+
+.monitorTable {
+	display: table;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	line-height: 16px;
+	color: rgb(68, 68, 68);
 }
 
 .monitorFooter {
@@ -65,8 +86,7 @@
 
 .monitor_device_frame {
 	text-align: center;
-	display: table-cell;
-	float: left;
+	display: inline-block;
 }
 
 .monitor_device_frame a {
@@ -78,29 +98,34 @@
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	display: flex;
+	flex-flow: row wrap;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
 }
 
-.monitor_legend_cell {
-	text-align: center;
-	display: table-cell;
+.monitor_legend > * {
+	padding: 0px 2px;
 	white-space: nowrap;
-	float: left;
-	padding: 0px;
-	margin: 0px;
-}
-
-.monitor_legend table {
-	padding: 2px;
-	width: 100%;
+	min-width: 100px;
+	font-size: 11px;
+	flex: 1 9%;
+	font-weight: normal;
 }
 
 // Extra Small Classification
 .monitor_exsmall {
 	height: 55px;
 	width: 35px;
+}
+
+.monitor_exsmall_title {
+	display: inline-block;
+	text-align: center;
+	width: 90px !important;
+	word-wrap: break-word;
+	overflow: hidden;
 }
 
 .monitor_exsmall_tiles {
@@ -110,7 +135,7 @@
 
 .monitor_exsmall_tilesadt {
 	height: 35px;
-	min-width: 74px;
+	width: 94px;
 }
 
 .monitor_exsmall td {
@@ -136,6 +161,14 @@
 	min-width: 28px;
 }
 
+.monitor_small_title {
+	display: inline-block;
+	text-align: center;
+	width: 90px !important;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
 .monitor_small_tiles {
 	height: 28px;
 	min-width: 28px;
@@ -143,7 +176,7 @@
 
 .monitor_small_tilesadt {
 	height: 45px;
-	min-width: 74px;
+	width: 94px;
 }
 
 .monitor_small i, .monitor_small_tiles i, .monitor_small_tilesadt i {
@@ -171,6 +204,14 @@
 	min-width: 58px;
 }
 
+.monitor_medium_title {
+	display: inline-block;
+	text-align: center;
+	width: 100px !important;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
 .monitor_medium_tiles {
 	height: 48px;
 	min-width: 58px;
@@ -178,7 +219,7 @@
 
 .monitor_medium_tilesadt {
 	height: 65px;
-	min-width: 88px;
+	width: 108px;
 }
 
 .monitor_medium i, .monitor_medium_tiles i, .monitor_medium_tilesadt i {
@@ -215,6 +256,14 @@
 	width: 128px !important;
 }
 
+.monitor_large_title {
+	display: inline-block;
+	text-align: center;
+	width: 128px !important;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
 .monitor_large_tiles {
 	height: 88px;
 	min-width: 88px;
@@ -222,7 +271,8 @@
 
 .monitor_large_tilesadt {
 	height: 102px;
-	min-width: 98px;
+	width: 128px;
+	justify-content: center;
 }
 
 .monitor_large i, .monitor_large_tiles i, .monitor_large_tilesadt i {
@@ -255,6 +305,14 @@
 	min-width: 128px;
 }
 
+.monitor_exlarge_title {
+	display: inline-block;
+	text-align: center;
+	width: 128px !important;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
 .monitor_exlarge_tiles {
 	height: 128px;
 	min-width: 128px;
@@ -262,7 +320,7 @@
 
 .monitor_exlarge_tilesadt {
 	height: 148px;
-	min-width: 128px;
+	width: 128px;
 }
 
 .monitor_exlarge i, .monitor_exlarge_tiles i, .monitor_exlarge_tilesadt i {

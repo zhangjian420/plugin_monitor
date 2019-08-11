@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: monitor on cacti 1.1.34\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-03-19 09:50+0000\n"
-"PO-Revision-Date: 2019-04-26 10:12+0000\n"
-"Last-Translator: whsir <wh@whsir.com>\n"
+"PO-Revision-Date: 2019-07-26 12:16+0000\n"
+"Last-Translator: tomcat <luis_126@126.com>\n"
 "Language-Team: Chinese (Simplified) <http://translate.cacti.net/projects/"
 "cacti/monitor/zh-CN/>\n"
 "Language: zh-CN\n"
@@ -297,7 +297,6 @@ msgid "Rename Dashboard"
 msgstr "仪表盘重命名"
 
 #: monitor.php:696
-#, fuzzy
 msgid "Delete"
 msgstr "删除"
 
@@ -317,7 +316,6 @@ msgid "%s Alerts for downed Devices"
 msgstr "%s 宕机设备的警报"
 
 #: monitor.php:708
-#, fuzzy
 msgid "Search"
 msgstr "搜索"
 
