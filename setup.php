@@ -46,7 +46,7 @@ function plugin_monitor_install() {
 	api_plugin_register_hook('monitor', 'device_sql_where', 'monitor_device_sql_where', 'setup.php');
 	api_plugin_register_hook('monitor', 'device_table_bottom', 'monitor_device_table_bottom', 'setup.php');
 
-	api_plugin_register_realm('monitor', 'monitor.php', 'View Monitoring Dashboard', 1);
+	api_plugin_register_realm('monitor', 'monitor.php', '查看监控', 1);
 
 	monitor_setup_table();
 }
